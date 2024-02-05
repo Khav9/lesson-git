@@ -27,4 +27,26 @@ function createCategory(string $name, string $description) : bool
     return $statement->rowCount() > 0;
 }
 
+function getCategory(int $id)
+{
+    global $connection;
+    $statement = $connection->prepare("select * from categories where id = :id");
+    $statement->execute([':id' => $id]);
+    return $statement->fetch();
+}
+
+function updateCategory(string $name, string $description, int $id) : bool
+{
+    global $connection;
+    $statement = $connection->prepare("update categories set name = :name, description = :description where id = :id");
+    $statement->execute([
+        ':name' => $name,
+        ':description' => $description,
+        ':id' => $id
+
+    ]);
+
+    return $statement->rowCount() > 0;
+}
+
 ?>
