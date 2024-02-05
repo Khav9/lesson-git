@@ -6,6 +6,7 @@ $routes = [
     '/post' => 'controllers/post/post.controller.php',
     '/project' => 'controllers/project/project.controller.php',
     '/user' => 'controllers/user/user.controller.php',
+    '/cat' => 'controllers/category/category.controller.php',
 ];
 
 if (array_key_exists($uri, $routes)) {
