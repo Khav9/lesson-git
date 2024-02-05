@@ -6,6 +6,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         require_once('../../models/category.model.php');
         updateCategory($_POST['name'], $_POST['description'], $_POST['id']);
 
-        header('location: /category');
+        header('location: /cat');
     }
 }

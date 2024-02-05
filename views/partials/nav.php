@@ -11,7 +11,7 @@
       <a class="<?= urlIs('/post') ? 'active bg-dark text-white' : '' ?> nav-link" href="/post">Post</a>
       <a class="<?= urlIs('/project') ? 'active bg-dark text-white' : '' ?> nav-link" href="/project">Project</a>
       <a class="<?= urlIs('/user') ? 'active bg-dark text-white' : '' ?> nav-link" href="/user">User</a>
-      <a class="<?= urlIs('/user') ? 'active bg-dark text-white' : '' ?> nav-link" href="/user">Category</a>
+      <a class="<?= urlIs('/cat') ? 'active bg-dark text-white' : '' ?> nav-link" href="/cat">Category</a>
     </div>
     <div class="navbar-nav ml-auto">
       <a class="nav-link" href="#"><?=$_SESSION["email"] ?></a>

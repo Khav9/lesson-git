@@ -1,7 +1,7 @@
 <?php
 
 $hostname = "localhost";
-$database = "git_db";
+$database = "demo_db";
 $username = "root";
 $password = "";
 
