@@ -10,7 +10,7 @@ if (!isset($_SESSION['user_id'])) {
 <?php require "../partials/head.php" ?>
 <?php require "../../utils/url.php" ?>
 <?php require "../partials/nav.php" ?>
-
+<!-- This is  create category page-->
 <div class="card mt-5">
     <div class="card-body">
         <form action="../../controllers/category/category.create.controller.php" method="post">
