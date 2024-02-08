@@ -11,6 +11,7 @@ if (!isset($_SESSION['user_id'])) {
 <?php require "../../utils/url.php" ?>
 <?php require "../partials/nav.php" ?>
 
+<!-- this is comment -->
 <div class="card mt-5">
     <div class="card-body">
         <form action="../../controllers/user/user.create.controller.php" method="post">
